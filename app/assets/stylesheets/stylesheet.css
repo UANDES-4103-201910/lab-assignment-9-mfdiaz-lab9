@@ -1,0 +1,25 @@
+.button-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center
+        flex-wrap: nowrap;
+}
+
+.button {
+	font-family: sans-serif;
+	background-color: #aaa;
+	color: #fff;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	white-space: nowrap;
+	height: auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.button:active {
+    background-color: #eaeaea;
+}

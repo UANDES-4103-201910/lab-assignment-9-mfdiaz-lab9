@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab4Assignment</title>
+    <title>Lab9Assignment</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,19 @@
   </head>
 
   <body>
+    <div id="header">
+      <span class="button-row">
+        <% if is_user_logged_in? %>
+          <div><%= get_current_user.name %></div>
+          <a href="<%= destroy_user_session_path %>" class="button">Log Out</a>
+        <% else %>
+          <a href="<%= root_path %>" class="button">Log In</a>
+          <a href="<%= registrations_path %>" class="button">Sign In</a>
+        <% end %>
+      </span>
+    </div>
   	<p id="notice"><%= notice %></p>
+        <p id="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

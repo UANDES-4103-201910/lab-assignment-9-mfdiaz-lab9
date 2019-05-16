@@ -1412,3 +1412,2948 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:00:30 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20190516175459)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20190516175459)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190516175459"]]
+  [1m[35m (128.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:05:36 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 711ms (Views: 702.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:11:45 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:16:10 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (ExecJS::RubyRacerRuntime is not supported. Please replace therubyracer with mini_racer in your Gemfile or use Node.js as ExecJS runtime.):
+    4:     <title>Lab4Assignment</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2771581194167786814_70320864244500'
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:16:34 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (ExecJS::RubyRacerRuntime is not supported. Please replace therubyracer with mini_racer in your Gemfile or use Node.js as ExecJS runtime.):
+    4:     <title>Lab4Assignment</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2771581194167786814_70320694300660'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:17:33 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 306ms (Views: 296.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:22:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 134ms (Views: 132.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:23:28 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:26:07 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:26:52 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:27:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:30:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:32:06 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:33:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:34:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:39:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_user_logged_in?' for #<#<Class:0x0000000003e70538>:0x00007f767c004c28>):
+    11:   <body>
+    12:     <div id="header">
+    13:       <span class="button-row">
+    14:         <% if is_user_logged_in? %>
+    15:           <span class="button">Log Out</span>
+    16:         <% else %>
+    17:           <span class="button">Log In</span>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__4002578576453986792_70073532491200'
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:29 -0400
+  
+SyntaxError (/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/controllers/application_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  helper_method: is_user_logged_in?
+               ^):
+  
+app/controllers/application_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:43:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:44:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:50:37 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_user_logged_in?' for #<#<Class:0x00007f767578f260>:0x00007f767578d780>):
+    11:   <body>
+    12:     <div id="header">
+    13:       <span class="button-row">
+    14:         <% if is_user_logged_in? %>
+    15:           <span class="button">Log Out</span>
+    16:         <% else %>
+    17:           <span class="button">Log In</span>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__4002578576453986792_70073376827980'
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:51:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:55:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations_path" for 127.0.0.1 at 2019-05-16 14:55:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/registrations_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:55:45 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 14:57:13 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-05-16 14:57:17 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (115.5ms)
+Completed 200 OK in 150ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-05-16 14:57:26 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:07:46 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:07:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:08:51 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:09:16 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:09:19 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-05-16 15:09:21 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:09:22 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:11:29 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 15:12:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAttributesToUsers (20190516191719)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190516191719"]]
+  [1m[35m (122.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:04:16 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 292ms (Views: 276.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:04:58 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:04:58 -0400
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:07:08 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 240ms (Views: 231.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:07:11 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:07:11 -0400
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:10:45 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 263ms (Views: 252.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:10:48 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:10:50 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:10:50 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:11:47 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:11:49 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:11:49 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:11:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:13:07 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:13:09 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:13:09 -0400
+Started GET "/users/auth/google_oauth2/callback?state=68d2cf881f544f6e0973bd3020e687ce838ab27ed9321654&code=4/TAE_ekQP495tqzGVvnCzTKGdsFqMEJj2_LWzji4hn9mF6gD8hhwXHpF5-ILaO1RUZWjwZt3w4HHiWCXy4xzl7uQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:13:15 -0400
+  
+ActionController::RoutingError (uninitialized constant Users):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:420:in `call_app!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:373:in `callback_phase'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+omniauth (1.9.0) lib/omniauth/strategy.rb:238:in `callback_call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/users/auth/google_oauth2/callback?state=68d2cf881f544f6e0973bd3020e687ce838ab27ed9321654&code=4/TAE_ekQP495tqzGVvnCzTKGdsFqMEJj2_LWzji4hn9mF6gD8hhwXHpF5-ILaO1RUZWjwZt3w4HHiWCXy4xzl7uQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:18:02 -0400
+  
+NameError (uninitialized constant Users):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+devise (4.6.2) lib/devise/omniauth.rb:21:in `block in <top (required)>'
+omniauth (1.9.0) lib/omniauth/strategy.rb:491:in `fail!'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:78:in `rescue in callback_phase'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:66:in `callback_phase'
+omniauth (1.9.0) lib/omniauth/strategy.rb:238:in `callback_call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/auth/google_oauth2/callback?state=68d2cf881f544f6e0973bd3020e687ce838ab27ed9321654&code=4/TAE_ekQP495tqzGVvnCzTKGdsFqMEJj2_LWzji4hn9mF6gD8hhwXHpF5-ILaO1RUZWjwZt3w4HHiWCXy4xzl7uQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:18:42 -0400
+  
+NameError (uninitialized constant Users):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+devise (4.6.2) lib/devise/omniauth.rb:21:in `block in <top (required)>'
+omniauth (1.9.0) lib/omniauth/strategy.rb:491:in `fail!'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:78:in `rescue in callback_phase'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:66:in `callback_phase'
+omniauth (1.9.0) lib/omniauth/strategy.rb:238:in `callback_call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/users/auth/google_oauth2/callback?state=68d2cf881f544f6e0973bd3020e687ce838ab27ed9321654&code=4/TAE_ekQP495tqzGVvnCzTKGdsFqMEJj2_LWzji4hn9mF6gD8hhwXHpF5-ILaO1RUZWjwZt3w4HHiWCXy4xzl7uQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:21:12 -0400
+  
+NameError (uninitialized constant Users):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+devise (4.6.2) lib/devise/omniauth.rb:21:in `block in <top (required)>'
+omniauth (1.9.0) lib/omniauth/strategy.rb:491:in `fail!'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:78:in `rescue in callback_phase'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:66:in `callback_phase'
+omniauth (1.9.0) lib/omniauth/strategy.rb:238:in `callback_call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:21:28 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:21:42 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 302ms (Views: 292.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:21:44 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:21:44 -0400
+Started GET "/users/auth/google_oauth2/callback?state=cb977c1bb81089a02c3bed61813a2774d514eaa997043b08&code=4/TAGzmSwZb07zeL_WiadHJHkZS38MpmhpH0T2Msbbn8D7_bSN9ycWtztGaA3S2SSO70J5qmbOtpFSXYjyHMRw-fE&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:21:48 -0400
+  
+ActionController::RoutingError (uninitialized constant Users):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:420:in `call_app!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:373:in `callback_phase'
+omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+omniauth (1.9.0) lib/omniauth/strategy.rb:238:in `callback_call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/auth/google_oauth2/callback?state=cb977c1bb81089a02c3bed61813a2774d514eaa997043b08&code=4/TAGzmSwZb07zeL_WiadHJHkZS38MpmhpH0T2Msbbn8D7_bSN9ycWtztGaA3S2SSO70J5qmbOtpFSXYjyHMRw-fE&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:24:23 -0400
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"cb977c1bb81089a02c3bed61813a2774d514eaa997043b08", "code"=>"4/TAGzmSwZb07zeL_WiadHJHkZS38MpmhpH0T2Msbbn8D7_bSN9ycWtztGaA3S2SSO70J5qmbOtpFSXYjyHMRw-fE", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 16:24:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 97ms (Views: 56.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:24:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:24:44 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:24:44 -0400
+Started GET "/users/auth/google_oauth2/callback?state=7d245f4313b1904aff6dcb9513aa47ed6e4de463a4720941&code=4/TAFC83tX9Dm_Fnau9tja9XbgrHo16qEKfTo4tst4o9CTMwzyQMFzFO-rHX-hUPOOWo99QHjIhqSiBfJTzRGOqV8&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 16:24:51 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"7d245f4313b1904aff6dcb9513aa47ed6e4de463a4720941", "code"=>"4/TAFC83tX9Dm_Fnau9tja9XbgrHo16qEKfTo4tst4o9CTMwzyQMFzFO-rHX-hUPOOWo99QHjIhqSiBfJTzRGOqV8", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 276ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 16:24:51 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 16:25:42 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 16:25:47 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:25:50 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:25:50 -0400
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 16:26:04 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-05-16 16:28:09 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DsT5cJGjWo3TMJrtNJW+OVlDTk7dfZn5HHbjWbxqNAY1o3hzl2JDLxatPTGOTSTxX4dDDv9fD5eX58BBGQbXw==", "user"=>{"email"=>"mfdiaz1@miuandes.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["email", "mfdiaz1@miuandes.cl"], ["created_at", "2019-05-16 20:28:10.064126"], ["updated_at", "2019-05-16 20:28:10.064126"], ["encrypted_password", "$2a$11$oqg47Z0/idBpICkFQBjecec.4WZD.J7SGVgoSZ8780Q3ef95EdyAe"]]
+  [1m[35m (92.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 358ms (ActiveRecord: 92.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:28:10 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-05-16 16:28:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"poOvvhZfU/SBWPwnebcoR3hJmAdvAwTEzjxQLo9Pv+5CbjG6GkRXkgpOirgLXEosWFKIMm+Ljp10EhSi7doMYQ==", "session"=>{"email"=>"mfdiaz1@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 58ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:29:03 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:29:03 -0400
+Started GET "/users/auth/google_oauth2/callback?state=76fce0a3297f04931cfc2ef9f04e71015edf44746039c7a4&code=4/TAEliMJQtwYH-RHEowWtoM47Xsb3Ouh1iVZmyElmWnJSTvbU3CdCx0lMX9ouqzyjzFQJbWx-G-lnb_dkftDN7P8&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2019-05-16 16:29:10 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"76fce0a3297f04931cfc2ef9f04e71015edf44746039c7a4", "code"=>"4/TAEliMJQtwYH-RHEowWtoM47Xsb3Ouh1iVZmyElmWnJSTvbU3CdCx0lMX9ouqzyjzFQJbWx-G-lnb_dkftDN7P8", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:29:11 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:29:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:53:07 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 16:53:07 -0400
+Started GET "/users/auth/google_oauth2/callback?state=4f6b414d2e77f338da6bfd2b642cc30e673633865406fdd4&code=4/TQGdXIYSADM93n2hugIx-VnHZWy3H0P5WwsWmRpCiT5nHUcq2cJxaWBfiRhhcP3YRVacRFvqlxAaN4b9-QZqfeM&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2019-05-16 16:53:18 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"4f6b414d2e77f338da6bfd2b642cc30e673633865406fdd4", "code"=>"4/TQGdXIYSADM93n2hugIx-VnHZWy3H0P5WwsWmRpCiT5nHUcq2cJxaWBfiRhhcP3YRVacRFvqlxAaN4b9-QZqfeM", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 16:53:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:04:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_out' for #<#<Class:0x00007fd87c0d4588>:0x00007fd87c0d2940>
+Did you mean?  log_out_url):
+    12:     <div id="header">
+    13:       <span class="button-row">
+    14:         <% if is_user_logged_in? %>
+    15:           <a href="<%= log_out %>" class="button">Log Out</a>
+    16:         <% else %>
+    17:           <a href="<%= root_path %>" class="button">Log In</a>
+    18:           <a href="<%= registrations_path %>" class="button">Sign In</a>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__1208906609317892489_70283750937180'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:06:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:08:02 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:15: syntax error, unexpected '>'
+...r.append=( current_user.name &></div>
+...                              ^
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: unknown regexp options - lg
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <a href="/log_out" class="button">Log Out</a>
+                       ^~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...a href="/log_out" class="button">Log Out</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.safe_append='" class="button">Log In</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.safe_append='" class="button">Sign In</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+  	<p id="notice">'.freeze;@output_buffer.app...
+  	       ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:31: unterminated string meets end of file
+          end
+             ^
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected '>'
+app/views/layouts/application.html.erb:16: unknown regexp options - lg
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:31: unterminated string meets end of file
+app/views/layouts/application.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:08:56 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:15: syntax error, unexpected '>'
+...append=( current_user().name &></div>
+...                              ^
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: unknown regexp options - lg
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <a href="/log_out" class="button">Log Out</a>
+                       ^~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...a href="/log_out" class="button">Log Out</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.safe_append='" class="button">Log In</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.safe_append='" class="button">Sign In</a>
+...                         ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+  	<p id="notice">'.freeze;@output_buffer.app...
+  	       ^~~~~~
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:31: unterminated string meets end of file
+          end
+             ^
+/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/views/layouts/application.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected '>'
+app/views/layouts/application.html.erb:16: unknown regexp options - lg
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:31: unterminated string meets end of file
+app/views/layouts/application.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:09:33 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:10:56 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:11:31 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:24:48 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 337ms (Views: 326.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-16 17:24:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/log_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-16 17:26:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/log_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:16 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-16 17:26:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/log_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:24 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:43 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:26:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:32:50 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 1.5ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:34:57 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-16 17:34:59 -0400
+Processing by SessionsController#destroy as HTML
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `link_to' for #<SessionsController:0x00007f8df00a09d0>):
+  
+app/controllers/sessions_controller.rb:11:in `destroy'
+Started GET "/log_out" for 127.0.0.1 at 2019-05-16 17:39:11 -0400
+Processing by SessionsController#destroy as HTML
+Completed 406 Not Acceptable in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (SessionsController#destroy is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:40:20 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:48:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 17:48:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:46:in `set_user'
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 17:51:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 17:56:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:56:29 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 17:56:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:56:53 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 316ms (Views: 306.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 17:56:56 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 17:56:56 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (115.6ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "start_date" date, "place_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (98.8ms)[0m  [1m[35mCREATE  INDEX "index_events_on_place_id" ON "events" ("place_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "places"[0m
+  [1m[35m (111.9ms)[0m  [1m[35mCREATE TABLE "places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "capacity" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tickets"[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE TABLE "tickets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "price" integer, "event_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (112.0ms)[0m  [1m[35mCREATE  INDEX "index_tickets_on_event_id" ON "tickets" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_tickets"[0m
+  [1m[35m (109.0ms)[0m  [1m[35mCREATE TABLE "user_tickets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "ticket_id" integer, "time" datetime, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (99.2ms)[0m  [1m[35mCREATE  INDEX "index_user_tickets_on_ticket_id" ON "user_tickets" ("ticket_id")[0m
+  [1m[35m (100.4ms)[0m  [1m[35mCREATE  INDEX "index_user_tickets_on_user_id" ON "user_tickets" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (164.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "last_name" varchar, "email" varchar, "phone" varchar, "password" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "provider" varchar, "uid" integer)[0m
+  [1m[35m (109.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (98.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (110.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (82.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190516191719)[0m
+  [1m[35m (64.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180401225923),
+(20190516175459),
+(20180401225453),
+(20180401230354),
+(20180401225615),
+(20180401225731);
+
+[0m
+  [1m[35m (95.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-16 21:57:21.821845"], ["updated_at", "2019-05-16 21:57:21.821845"]]
+  [1m[35m (85.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "start_date" date, "place_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (110.7ms)[0m  [1m[35mCREATE  INDEX "index_events_on_place_id" ON "events" ("place_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "places"[0m
+  [1m[35m (97.8ms)[0m  [1m[35mCREATE TABLE "places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "capacity" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tickets"[0m
+  [1m[35m (97.3ms)[0m  [1m[35mCREATE TABLE "tickets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "price" integer, "event_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (113.7ms)[0m  [1m[35mCREATE  INDEX "index_tickets_on_event_id" ON "tickets" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_tickets"[0m
+  [1m[35m (110.4ms)[0m  [1m[35mCREATE TABLE "user_tickets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "ticket_id" integer, "time" datetime, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (98.8ms)[0m  [1m[35mCREATE  INDEX "index_user_tickets_on_ticket_id" ON "user_tickets" ("ticket_id")[0m
+  [1m[35m (108.4ms)[0m  [1m[35mCREATE  INDEX "index_user_tickets_on_user_id" ON "user_tickets" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (110.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "last_name" varchar, "email" varchar, "phone" varchar, "password" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "provider" varchar, "uid" integer)[0m
+  [1m[35m (109.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (109.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (155.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (83.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190516191719)[0m
+  [1m[35m (64.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180401225923),
+(20190516175459),
+(20180401225453),
+(20180401230354),
+(20180401225615),
+(20180401225731);
+
+[0m
+  [1m[35m (94.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-16 21:57:23.503349"], ["updated_at", "2019-05-16 21:57:23.503349"]]
+  [1m[35m (81.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-05-16 21:57:23.588009"], ["key", "environment"]]
+  [1m[35m (61.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fjborie@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fjborie@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "address", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Francisco"], ["last_name", "Borie"], ["email", "fjborie@miuandes.cl"], ["phone", "987654321"], ["address", "San Carlos de Apoquindo 2200"], ["created_at", "2019-05-16 21:57:23.937310"], ["updated_at", "2019-05-16 21:57:23.937310"], ["encrypted_password", "$2a$11$BVqznMQe5ZYwlD/5pjxWl.i0AtKFfwfsjljiwsST1EFE6SXc/5VxC"]]
+  [1m[35m (78.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dbeckdorf@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dbeckdorf@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "address", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Diego"], ["last_name", "Beckdorf"], ["email", "dbeckdorf@miuandes.cl"], ["phone", "987654321"], ["address", "San Carlos de Apoquindo 2200"], ["created_at", "2019-05-16 21:57:24.274654"], ["updated_at", "2019-05-16 21:57:24.274654"], ["encrypted_password", "$2a$11$v1cRpnS7aCLTtnqh0A75Pe9sQmAXdwy22BRBQ1HQtNjEwslr3QVMa"]]
+  [1m[35m (72.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mrgarcia1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mrgarcia1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "address", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maximiliano"], ["last_name", "Garcia"], ["email", "mrgarcia1@miuandes.cl"], ["phone", "987654321"], ["address", "San Carlos de Apoquindo 2200"], ["created_at", "2019-05-16 21:57:24.602817"], ["updated_at", "2019-05-16 21:57:24.602817"], ["encrypted_password", "$2a$11$phS8eqESoo.QqYJeTsjFterjywOHFMw3IxhpRSNdyva8A2wpvOKiC"]]
+  [1m[35m (77.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlace Create (0.3ms)[0m  [1m[32mINSERT INTO "places" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estadio Nacional Julio Martínez Prádanos"], ["address", "Av. Grecia 2001"], ["capacity", 50000], ["created_at", "2019-05-16 21:57:24.696842"], ["updated_at", "2019-05-16 21:57:24.696842"]]
+  [1m[35m (61.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlace Create (0.3ms)[0m  [1m[32mINSERT INTO "places" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Teatro Nacional Chileno"], ["address", "San Diego 850"], ["capacity", 5000], ["created_at", "2019-05-16 21:57:24.761079"], ["updated_at", "2019-05-16 21:57:24.761079"]]
+  [1m[35m (66.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."place_id" = ? AND "events"."start_date" = ?[0m  [["place_id", 1], ["start_date", "2019-05-15"]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."place_id" = ? AND "events"."start_date" = ?[0m  [["place_id", 1], ["start_date", "2019-05-20"]]
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "start_date", "place_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Facebook Hackathon 2018"], ["start_date", "2019-05-20"], ["place_id", 1], ["created_at", "2019-05-16 21:57:24.887155"], ["updated_at", "2019-05-16 21:57:24.887155"]]
+  [1m[35m (72.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."place_id" = ? AND "events"."start_date" = ?[0m  [["place_id", 2], ["start_date", "2019-06-25"]]
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "start_date", "place_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lollapalooza 2018"], ["start_date", "2019-06-25"], ["place_id", 2], ["created_at", "2019-05-16 21:57:24.963083"], ["updated_at", "2019-05-16 21:57:24.963083"]]
+  [1m[35m (87.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."place_id" = ? AND "events"."start_date" = ?[0m  [["place_id", 2], ["start_date", "2019-06-30"]]
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "start_date", "place_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Festival de Viña 2018"], ["start_date", "2019-06-30"], ["place_id", 2], ["created_at", "2019-05-16 21:57:25.055942"], ["updated_at", "2019-05-16 21:57:25.055942"]]
+  [1m[35m (79.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:01:17 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 295ms (Views: 285.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:01:22 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:01:22 -0400
+Started GET "/users/auth/google_oauth2/callback?state=939535b57248b100a57c99420f9f9c1e5e8ae208c18f775d&code=4/TQG1B2h26rHDfsSXuTdq59YQ43e7V43aa_sZluOa4xPdurj9d1T18NmceYhQb6VRFktHDmNEsewUf1EmEk6F95c&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:01:28 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"939535b57248b100a57c99420f9f9c1e5e8ae208c18f775d", "code"=>"4/TQG1B2h26rHDfsSXuTdq59YQ43e7V43aa_sZluOa4xPdurj9d1T18NmceYhQb6VRFktHDmNEsewUf1EmEk6F95c", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 320ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:01:29 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:02:07 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:14:17 -0400
+  
+SyntaxError (/home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/user.rb:29: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/user.rb:29: syntax error, unexpected end-of-input, expecting keyword_end
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:14:37 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:14:41 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:14:41 -0400
+Started GET "/users/auth/google_oauth2/callback?state=fee83b4c3ffe9ed7489ddac015b5670acdb2c1e61fe4ca9f&code=4/TQGAI_pXJfG747zQ08LmrmkTNqYkTi5hZgjua1r3HoccNtpiBSTRWDaffeSaPTDOrDs8XFjj3vQBwCGZU2RZr6g&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:14:46 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"fee83b4c3ffe9ed7489ddac015b5670acdb2c1e61fe4ca9f", "code"=>"4/TQGAI_pXJfG747zQ08LmrmkTNqYkTi5hZgjua1r3HoccNtpiBSTRWDaffeSaPTDOrDs8XFjj3vQBwCGZU2RZr6g", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 283ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:14:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:16:55 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:16:57 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:16:57 -0400
+Started GET "/users/auth/google_oauth2/callback?state=c4af9fc8c9be66b4cdec054de7c2da8e93d5e9ba0ce55bf6&code=4/TQH1XW04FOs8gWWTDLR-ire4Mk9ZHtBci2t00W39_7Ghi0qNHAIPd1tV7pshHgQF5orLoQuZz5n2pFKgPbN4qec&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2019-05-16 18:17:04 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c4af9fc8c9be66b4cdec054de7c2da8e93d5e9ba0ce55bf6", "code"=>"4/TQH1XW04FOs8gWWTDLR-ire4Mk9ZHtBci2t00W39_7Ghi0qNHAIPd1tV7pshHgQF5orLoQuZz5n2pFKgPbN4qec", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "MARTÍN FELIPE ALBERTO DÍAZ PACHECO"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 292ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:17:04 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:21:04 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 328ms (Views: 318.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:21:07 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:21:07 -0400
+Started GET "/users/auth/google_oauth2/callback?state=c6b1dd19bf57e85b44e881da7328515abc7a1ca2a8a6b695&code=4/TQGDENWkmoKzgI1Cc11EK-u-hDfzLQt42LSPzcPpafrRjKuBqOKuWPc2eaKRMu62ZwYiztwFFQsZTxWuPLbvpmE&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:21:13 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c6b1dd19bf57e85b44e881da7328515abc7a1ca2a8a6b695", "code"=>"4/TQGDENWkmoKzgI1Cc11EK-u-hDfzLQt42LSPzcPpafrRjKuBqOKuWPc2eaKRMu62ZwYiztwFFQsZTxWuPLbvpmE", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 303ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:21:14 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (19.1ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:24:21 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:24:25 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:24:25 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:24:43 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:30:23 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:30:30 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:30:32 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:30:32 -0400
+Started GET "/users/auth/google_oauth2/callback?state=4cb29a86c30cd41c37f757d0cc51243a75dc16ab718607b0&code=4/TQG3IWfVVhXaGDWenWIhTBzUM-ojczc1SF1zDquug-bxips3Z2bKi3Bl7hKy_m8_3dFgp5mhIUIDdUJN2dP54Co&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:30:39 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"4cb29a86c30cd41c37f757d0cc51243a75dc16ab718607b0", "code"=>"4/TQG3IWfVVhXaGDWenWIhTBzUM-ojczc1SF1zDquug-bxips3Z2bKi3Bl7hKy_m8_3dFgp5mhIUIDdUJN2dP54Co", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 287ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:30:40 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:32:13 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:32:15 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:32:15 -0400
+Started GET "/users/auth/google_oauth2/callback?state=bc695158324fd68181ffa0b67a335c2e12dad8862b68e43b&code=4/TQEtmocV2XXqAKFZAwA8C-0Yjvcmgaizq3QiYt1edPGDaUDVZQtD6lEiqIH1RgChPyTVGXtKmrH82ziuQISxz1U&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:32:21 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"bc695158324fd68181ffa0b67a335c2e12dad8862b68e43b", "code"=>"4/TQEtmocV2XXqAKFZAwA8C-0Yjvcmgaizq3QiYt1edPGDaUDVZQtD6lEiqIH1RgChPyTVGXtKmrH82ziuQISxz1U", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 299ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:32:22 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:33:02 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:33:04 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:33:06 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:33:06 -0400
+Started GET "/users/auth/google_oauth2/callback?state=f3c4a01b58b1d2a770407c18baa9d3ea44b19509f8da5d3b&code=4/TQFQbFygy_H2fIk7S4oTkPW24fT8shOZNwnOupjija0KPgnoyZP2imkYP0gRQNIfdArwL5l82ltLJNZsFw-QHik&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:33:12 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"f3c4a01b58b1d2a770407c18baa9d3ea44b19509f8da5d3b", "code"=>"4/TQFQbFygy_H2fIk7S4oTkPW24fT8shOZNwnOupjija0KPgnoyZP2imkYP0gRQNIfdArwL5l82ltLJNZsFw-QHik", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 285ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:33:13 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:35:34 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 88ms (Views: 40.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:35:40 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:35:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:35:43 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:35:43 -0400
+Started GET "/users/auth/google_oauth2/callback?state=830c11cf6b4c5c7efcaadce6d76e33743de6f22d1ae225ce&code=4/TQGu8XARcOlAMaVCBZkebf-cj4mI-aGcZWrq5P3VswIJRMTxPJsByFVHdawKvmIBSIt29eUtflOFfkcLo3nxw-g&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:35:50 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"830c11cf6b4c5c7efcaadce6d76e33743de6f22d1ae225ce", "code"=>"4/TQGu8XARcOlAMaVCBZkebf-cj4mI-aGcZWrq5P3VswIJRMTxPJsByFVHdawKvmIBSIt29eUtflOFfkcLo3nxw-g", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 259ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/models/user.rb:21:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:4:in `google_oauth2'
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:37:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:38:00 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:38:00 -0400
+Started GET "/users/auth/google_oauth2/callback?state=44684922bab755c0022ef902ea6a3fed263006039a72159e&code=4/TQEs4Zfx22mbRr-QQ9chDbRp2GPBbnVoWAYPa9kIDEig6y-CeV2Dr35Tjp__jQyX08BPPNrYfbw7PzIWW3nyXd8&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:38:05 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"44684922bab755c0022ef902ea6a3fed263006039a72159e", "code"=>"4/TQEs4Zfx22mbRr-QQ9chDbRp2GPBbnVoWAYPa9kIDEig6y-CeV2Dr35Tjp__jQyX08BPPNrYfbw7PzIWW3nyXd8", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MARTÍN FELIPE ALBERTO DÍAZ PACHECO"], ["email", "mfdiaz1@miuandes.cl"], ["created_at", "2019-05-16 22:38:06.895936"], ["updated_at", "2019-05-16 22:38:06.895936"], ["encrypted_password", "$2a$11$5XBPdKXnzjewHc1U0Si2nefmOg0WZQYgnB8ptP6jEamHGR5.PafMW"]]
+  [1m[35m (95.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 381ms (ActiveRecord: 98.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:38:07 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:38:40 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 54.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 18:38:45 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:38:45 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:38:48 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:38:48 -0400
+Started GET "/users/auth/google_oauth2/callback?state=3651dc8214fa89b2dd7fb45274a4d9256b004aa54c5dfdb2&code=4/TQGswbwhPB4lz4xhXhOOdfcQzz-8pKy8FLWtaYAcJBPkQKcREB9PbSc8nryL-Yo2P48VzjQx_4umMbFL01Tb7KE&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:38:53 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"3651dc8214fa89b2dd7fb45274a4d9256b004aa54c5dfdb2", "code"=>"4/TQGswbwhPB4lz4xhXhOOdfcQzz-8pKy8FLWtaYAcJBPkQKcREB9PbSc8nryL-Yo2P48VzjQx_4umMbFL01Tb7KE", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:38:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-05-16 18:40:48 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 42ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:40:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:40:50 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:40:50 -0400
+Started GET "/users/auth/google_oauth2/callback?state=8fb9e4480827a81860c69dabca1fa56df134d05e84ae4998&code=4/TQFUciV7u9BCSrCj3vyYnGb8SJNBJ45xWOYsBbQ88_KJsj_rJli50oLSSfHLp7UdVK6ibcsKFpMnleklp4QoCoQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:40:56 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"8fb9e4480827a81860c69dabca1fa56df134d05e84ae4998", "code"=>"4/TQFUciV7u9BCSrCj3vyYnGb8SJNBJ45xWOYsBbQ88_KJsj_rJli50oLSSfHLp7UdVK6ibcsKFpMnleklp4QoCoQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:40:57 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:42:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Destroy (84.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:44:08 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 320ms (Views: 309.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:44:13 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:44:13 -0400
+Started GET "/users/auth/google_oauth2/callback?state=e1c4feee70d933551e9d56c00adfbde74942cb2d1d84420d&code=4/TQFvffRb4LwZAK1UvuaB_QwHbrqNjwmQ_9kdNDnwMYXlg58pxUoSDiwzLkDuSvsqG9-6g3v-pE8lmwIGl8yyivo&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2019-05-16 18:44:19 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"e1c4feee70d933551e9d56c00adfbde74942cb2d1d84420d", "code"=>"4/TQFvffRb4LwZAK1UvuaB_QwHbrqNjwmQ_9kdNDnwMYXlg58pxUoSDiwzLkDuSvsqG9-6g3v-pE8lmwIGl8yyivo", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 312ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 18:44:20 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/martin/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:44:46 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:44:48 -0400
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2019-05-16 18:44:48 -0400
+Started GET "/users/auth/google_oauth2/callback?state=6ec45153d1d3a5d847435014bbf37aea8ba8d80a9e704761&code=4/TQG6J_v_cC9Pgs2643bK60lcAc5MtLUXn7Tv7q1pEGT6tE6Ur2roiNzOHWRBrPF_7S5rN-_jbYr-ukOVpK5r1og&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-05-16 18:44:53 -0400
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"6ec45153d1d3a5d847435014bbf37aea8ba8d80a9e704761", "code"=>"4/TQG6J_v_cC9Pgs2643bK60lcAc5MtLUXn7Tv7q1pEGT6tE6Ur2roiNzOHWRBrPF_7S5rN-_jbYr-ukOVpK5r1og", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mfdiaz1@miuandes.cl"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MARTÍN FELIPE ALBERTO DÍAZ PACHECO"], ["email", "mfdiaz1@miuandes.cl"], ["created_at", "2019-05-16 22:44:54.699609"], ["updated_at", "2019-05-16 22:44:54.699609"], ["encrypted_password", "$2a$11$FVOPr2QsSQJXap4c9jU6H.ozPiQTwAxnC5XQyBrN65U3Hl9043juO"]]
+  [1m[35m (75.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 363ms (ActiveRecord: 78.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:44:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
