@@ -16,9 +16,19 @@
         <% if can? :read, Ticket %>
           <td><%= link_to 'View Tickets', event_tickets_path(event) %></td>
         <% end %>
+        <% if can? :update, event %>
+          <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <% end %>
+        <% if can? :destroy, event %>
+          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+<% if can? :create, Event %>
+  <%= link_to 'New Event', new_event_path %>
+<% end %>
