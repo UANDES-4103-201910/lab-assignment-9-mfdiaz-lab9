@@ -8,7 +8,7 @@ class RegistrationsController < ApplicationController
           new_user = User.new(registration_params)
           if new_user.save
             flash[:notice] = "User created successfully"
-            redirect_to root_path
+            redirect_to login_form_path
           else
             error_message = ""
             new_user.errors.full_messages.each do |message|
@@ -18,4 +18,10 @@ class RegistrationsController < ApplicationController
             redirect_to sign_in_url
           end
 	end
+
+  private
+
+    def registration_params
+      params.require(:registrations).permit(:name, :last_name, :email, :password, :phone)
+    end
 end

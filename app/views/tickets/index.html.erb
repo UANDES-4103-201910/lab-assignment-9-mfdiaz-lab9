@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.event.name + " $" + ticket.price.to_s %></td>
+        <% if can? :read, ticket %>
+          <td><%= link_to 'Show', ticket %></td>
+        <% end %>
+        <% if can? :update, ticket %>
+          <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
+        <% end %>
+        <% if can? :destroy, ticket %>
+          <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% puts (can? :create, Ticket) %>
+<% if can? :create, Ticket %>
+  <%= link_to 'New Ticket', new_ticket_path %>
+<% end %>

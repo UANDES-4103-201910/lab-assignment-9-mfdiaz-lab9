@@ -12,10 +12,10 @@
     <div id="header">
       <span class="button-row">
         <% if is_user_logged_in? %>
-          <div><%= get_current_user.name %></div>
-          <a href="<%= destroy_user_session_path %>" class="button">Log Out</a>
+          <div><%= current_user.name %></div>
+          <a href="<%= log_out_path %>" class="button">Log Out</a>
         <% else %>
-          <a href="<%= root_path %>" class="button">Log In</a>
+          <a href="<%= login_form_path %>" class="button">Log In</a>
           <a href="<%= registrations_path %>" class="button">Sign In</a>
         <% end %>
       </span>

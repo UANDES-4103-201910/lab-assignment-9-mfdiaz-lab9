@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_23_150424) do
+ActiveRecord::Schema.define(version: 2019_05_23_202349) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2019_05_23_150424) do
     t.datetime "remember_created_at"
     t.string "provider"
     t.integer "uid"
-    t.string "role"
+    t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
