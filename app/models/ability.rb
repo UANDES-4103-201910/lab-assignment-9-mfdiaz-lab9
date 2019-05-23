@@ -6,6 +6,7 @@ class Ability
   def initialize(user)
     user ||= User.new
     can :read, Ticket
+    can :read, Event
     if user.registered?
       can :buy, Ticket 
       if user.admin?

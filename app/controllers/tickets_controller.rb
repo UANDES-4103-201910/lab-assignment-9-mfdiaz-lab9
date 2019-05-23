@@ -1,10 +1,12 @@
 class TicketsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+  before_action :set_event, only: [:index, :new]
 
   # GET /tickets
   # GET /tickets.json
   def index
-    @tickets = Ticket.all
+    @tickets = @event.tickets
   end
 
   # GET /tickets/1
@@ -24,7 +26,9 @@ class TicketsController < ApplicationController
   # POST /tickets
   # POST /tickets.json
   def create
+    @event = Event.find(params[:event_id])
     @ticket = Ticket.new(ticket_params)
+    @ticket.event = @event
 
     respond_to do |format|
       if @ticket.save
@@ -56,7 +60,7 @@ class TicketsController < ApplicationController
   def destroy
     @ticket.destroy
     respond_to do |format|
-      format.html { redirect_to tickets_url, notice: 'Ticket was successfully destroyed.' }
+      format.html { redirect_to event_tickets_url(@ticket.event), notice: 'Ticket was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -67,8 +71,12 @@ class TicketsController < ApplicationController
       @ticket = Ticket.find(params[:id])
     end
 
+    def set_event
+      @event = Event.find(params[:event_id])
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def ticket_params
-      params.fetch(:ticket, {})
+      params.require(:ticket).permit(:price)
     end
 end

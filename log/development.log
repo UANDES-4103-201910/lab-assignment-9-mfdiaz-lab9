@@ -7207,3 +7207,2034 @@ Processing by TicketsController#index as HTML
 Completed 200 OK in 73ms (Views: 69.8ms | ActiveRecord: 1.1ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:10:18 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (13.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 120ms (Views: 112.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2019-05-23 17:10:22 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:10:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/events/1/tickets"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/events/1" for 127.0.0.1 at 2019-05-23 17:12:41 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 52.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:12:48 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (238.0ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `ticket_path' for #<#<Class:0x00007fc0200a3c68>:0x00007fc0200a2228>):
+    14:       <tr>
+    15:         <td><%= ticket.event.name + " $" + ticket.price.to_s %></td>
+    16:         <% if can? :read, ticket %>
+    17:           <td><%= link_to 'Show', ticket %></td>
+    18:         <% end %>
+    19:         <% if can? :update, ticket %>
+    20:           <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
+  
+app/views/tickets/index.html.erb:17:in `block in _app_views_tickets_index_html_erb___3987306453164428141_70231573996600'
+app/views/tickets/index.html.erb:13:in `_app_views_tickets_index_html_erb___3987306453164428141_70231573996600'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/martin/Desktop/lab-assignment-9-mfdiaz-lab9/app/models/application_record.rb:1)
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:17:55 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (577.7ms)
+Completed 500 Internal Server Error in 588ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_ticket_path' for #<#<Class:0x00000000041bd830>:0x0000000004120dc8>
+Did you mean?  new_event_ticket_path):
+    31: 
+    32: <% puts (can? :create, Ticket) %>
+    33: <% if can? :create, Ticket %>
+    34:   <%= link_to 'New Ticket', new_ticket_path %>
+    35: <% end %>
+  
+app/views/tickets/index.html.erb:34:in `_app_views_tickets_index_html_erb___3987306453164428141_34500260'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:19:17 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:20:05 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2019-05-23 17:20:09 -0400
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (3.4ms)
+  Rendered events/new.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2019-05-23 17:20:13 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:22:23 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:22:26 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/events/2/tickets" for 127.0.0.1 at 2019-05-23 17:22:31 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"2"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:23:31 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:26:27 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:27:14 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/3/tickets" for 127.0.0.1 at 2019-05-23 17:27:16 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"3"}
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 81ms (Views: 76.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:29:49 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 78ms (Views: 71.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:29:51 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `tickets' for nil:NilClass):
+  
+app/controllers/tickets_controller.rb:7:in `index'
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:30:04 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/events" for 127.0.0.1 at 2019-05-23 17:31:09 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 84ms (Views: 76.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:31:11 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `event_id' for #<TicketsController:0x00007fc0340dbb40>
+Did you mean?  event_url):
+  
+app/controllers/tickets_controller.rb:7:in `index'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:31:30 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+Completed 404 Not Found in 8ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  
+app/controllers/tickets_controller.rb:7:in `index'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:34:33 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 162ms (Views: 105.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/events/2/tickets" for 127.0.0.1 at 2019-05-23 17:34:41 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"2"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/3/tickets" for 127.0.0.1 at 2019-05-23 17:34:44 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"3"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/4/tickets" for 127.0.0.1 at 2019-05-23 17:35:04 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"4"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tickets/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:28 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:41:29 -0400
+Processing by EventsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:42:18 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 93ms (Views: 42.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:42:26 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 59ms (Views: 49.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2019-05-23 17:42:38 -0400
+Processing by EventsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:42:38 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-05-23 17:42:46 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-05-23 17:43:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SUfN9192nfzQGOKS8hCdoLjTgid8lFjG5YdYXNxusHPsLSgA0zxe7T1APcGHhbtW4ZNrYcEefFLYwo/Zd/4yjQ==", "session"=>{"email"=>"fjborie@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fjborie@miuandes.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 257ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 17:43:01 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 58ms (Views: 51.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1/edit" for 127.0.0.1 at 2019-05-23 17:43:05 -0400
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (3.5ms)
+  Rendered events/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2019-05-23 17:43:10 -0400
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (2.9ms)
+  Rendered events/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:43:14 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tickets/2/edit" for 127.0.0.1 at 2019-05-23 17:44:50 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.9ms)
+  Rendered tickets/edit.html.erb within layouts/application (424.7ms)
+Completed 500 Internal Server Error in 434ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tickets_path' for #<#<Class:0x00007fc025ea41a0>:0x00007fc025bd8070>
+Did you mean?  ticket_path):
+    3: <%= render 'form', ticket: @ticket %>
+    4: 
+    5: <%= link_to 'Show', @ticket %> |
+    6: <%= link_to 'Back', tickets_path %>
+  
+app/views/tickets/edit.html.erb:6:in `_app_views_tickets_edit_html_erb__740507914751357704_70231621813920'
+Started GET "/tickets/2/edit" for 127.0.0.1 at 2019-05-23 17:47:02 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 53ms (ActiveRecord: 3.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  
+app/controllers/tickets_controller.rb:73:in `set_event'
+Started GET "/tickets/2/edit" for 127.0.0.1 at 2019-05-23 17:47:56 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.1ms)
+  Rendered tickets/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 87ms (Views: 37.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:48:06 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 66ms (Views: 41.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tickets/2" for 127.0.0.1 at 2019-05-23 17:48:25 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (421.5ms)
+Completed 500 Internal Server Error in 433ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tickets_path' for #<#<Class:0x00007fc0261f6e20>:0x00007fc025754378>
+Did you mean?  ticket_path):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+    4: <%= link_to 'Back', tickets_path %>
+  
+app/views/tickets/show.html.erb:4:in `_app_views_tickets_show_html_erb___1462554124703570071_70231619450980'
+Started GET "/tickets/2" for 127.0.0.1 at 2019-05-23 17:48:54 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:48:57 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 17:49:02 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (237.3ms)
+  Rendered tickets/new.html.erb within layouts/application (239.6ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc0261f6e20>:0x00007fc0259bc3e0>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_70231620547000'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_70231620711080'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 17:49:51 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (234.3ms)
+  Rendered tickets/new.html.erb within layouts/application (235.8ms)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc0261f6e20>:0x00000000040d45b8>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_33346320'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_34011940'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 17:49:56 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (223.6ms)
+  Rendered tickets/new.html.erb within layouts/application (225.3ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc0261f6e20>:0x00007fc026027838>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_70231624046460'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_70231624073560'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:51:43 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 44ms (Views: 35.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tickets/1" for 127.0.0.1 at 2019-05-23 17:52:04 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tickets/1/edit" for 127.0.0.1 at 2019-05-23 17:52:22 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.3ms)
+  Rendered tickets/edit.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"tickets", :event_id=>nil}, missing required keys: [:event_id]):
+    3: <%= render 'form', ticket: @ticket %>
+    4: 
+    5: <%= link_to 'Show', @ticket %> |
+    6: <%= link_to 'Back', event_tickets_path(@event) %>
+  
+app/views/tickets/edit.html.erb:6:in `_app_views_tickets_edit_html_erb__740507914751357704_70231615646100'
+Started GET "/tickets/1/edit" for 127.0.0.1 at 2019-05-23 17:52:42 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.0ms)
+  Rendered tickets/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets/1" for 127.0.0.1 at 2019-05-23 17:52:45 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 17:52:46 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 17:52:50 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (242.5ms)
+  Rendered tickets/new.html.erb within layouts/application (244.2ms)
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc0261f6e20>:0x00007fc025d62f08>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_70231623710780'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_70231622622300'
+Started POST "/__web_console/repl_sessions/299ce8bd986eb169196dd31082d4a577/trace" for 127.0.0.1 at 2019-05-23 17:53:07 -0400
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 17:54:01 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (218.5ms)
+  Rendered tickets/new.html.erb within layouts/application (220.1ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc025fde7c8>:0x00007fc025fdc658>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_70231623892540'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_70231623924440'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:02:39 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (227.9ms)
+  Rendered tickets/new.html.erb within layouts/application (229.4ms)
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `tickets_path' for #<#<Class:0x00007fc025fde7c8>:0x00007fc0259f1748>
+Did you mean?  ticket_path):
+    1: <%= form_with(model: ticket, local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_70231620632760'
+app/views/tickets/new.html.erb:3:in `_app_views_tickets_new_html_erb___373819154400391994_70231620819380'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:08:52 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.4ms)
+  Rendered tickets/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:09:09 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2baQUgOuYi6zPFoqDrkqnXf7BeoH4E/ftLMXbGZ+gcLa8rKhKz5n0JumNjTEv8J+1bkDUWLy49vHtbUGxt5PcA==", "commit"=>"Create Ticket", "event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/models/ticket.rb:12:in `ticket_on_time_event'
+app/controllers/tickets_controller.rb:32:in `block in create'
+app/controllers/tickets_controller.rb:31:in `create'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:12:32 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.9ms)
+  Rendered tickets/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:14:12 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.3ms)
+  Rendered tickets/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:19:13 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (21.8ms)
+  Rendered tickets/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 68ms (Views: 61.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:19:19 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCLMU8xU7i/20zDoWL/2+ZhKsNGT7HdmmImZTowkcabLZu6g5MTr0d5JXPaSuR4aOgi2avb+22LrjzskLIS/FA==", "ticket"=>{"event"=>"#<Event:0x00007fc025fe6590>", "price"=>"9999"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+activemodel (5.2.3) lib/active_model/forbidden_attributes_protection.rb:23:in `sanitize_for_mass_assignment'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+cancancan (3.0.1) lib/cancan/controller_resource_builder.rb:8:in `build_resource'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:108:in `load_resource_instance'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:23:15 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCLMU8xU7i/20zDoWL/2+ZhKsNGT7HdmmImZTowkcabLZu6g5MTr0d5JXPaSuR4aOgi2avb+22LrjzskLIS/FA==", "ticket"=>{"event"=>"#<Event:0x00007fc025fe6590>", "price"=>"9999"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Event(#70231621515960) expected, got "#<Event:0x00007fc025fe6590>" which is an instance of String(#12008980)):
+  
+activerecord (5.2.3) lib/active_record/associations/association.rb:246:in `raise_on_type_mismatch!'
+activerecord (5.2.3) lib/active_record/associations/belongs_to_association.rb:21:in `replace'
+activerecord (5.2.3) lib/active_record/associations/singular_association.rb:17:in `writer'
+activerecord (5.2.3) lib/active_record/associations/builder/association.rb:116:in `event='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+cancancan (3.0.1) lib/cancan/controller_resource_builder.rb:8:in `build_resource'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:108:in `load_resource_instance'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:26:42 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCLMU8xU7i/20zDoWL/2+ZhKsNGT7HdmmImZTowkcabLZu6g5MTr0d5JXPaSuR4aOgi2avb+22LrjzskLIS/FA==", "ticket"=>{"event"=>"#<Event:0x00007fc025fe6590>", "price"=>"9999"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Event(#70231573937380) expected, got "#<Event:0x00007fc025fe6590>" which is an instance of String(#12008980)):
+  
+activerecord (5.2.3) lib/active_record/associations/association.rb:246:in `raise_on_type_mismatch!'
+activerecord (5.2.3) lib/active_record/associations/belongs_to_association.rb:21:in `replace'
+activerecord (5.2.3) lib/active_record/associations/singular_association.rb:17:in `writer'
+activerecord (5.2.3) lib/active_record/associations/builder/association.rb:116:in `event='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+cancancan (3.0.1) lib/cancan/controller_resource_builder.rb:8:in `build_resource'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:108:in `load_resource_instance'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:26:56 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.9ms)
+  Rendered tickets/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 74ms (Views: 34.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:26:57 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4s3ofnuOgRuDBC2WbZiLuIQ8gSaF474wCRxKKBb1XN8zxVS0X4/+kaWfKiTsIrNQFL0v/8FIvyzItNCAPsbwQ==", "ticket"=>{"event"=>"1", "price"=>"9999"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Event(#70231573937380) expected, got "1" which is an instance of String(#12008980)):
+  
+activerecord (5.2.3) lib/active_record/associations/association.rb:246:in `raise_on_type_mismatch!'
+activerecord (5.2.3) lib/active_record/associations/belongs_to_association.rb:21:in `replace'
+activerecord (5.2.3) lib/active_record/associations/singular_association.rb:17:in `writer'
+activerecord (5.2.3) lib/active_record/associations/builder/association.rb:116:in `event='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+cancancan (3.0.1) lib/cancan/controller_resource_builder.rb:8:in `build_resource'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:108:in `load_resource_instance'
+cancancan (3.0.1) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.0.1) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:29:45 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.3ms)
+  Rendered tickets/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 126ms (Views: 36.3ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:29:50 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKvQJNF3L6nj9eSCIXIaEfjLbp8ku+BLrCYONJIZNv877/LX+ecqV8tviJzrdPLyWoloJEGpTE/fIKxeMrn4TQ==", "ticket"=>{"price"=>"9999"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTicket Create (39.2ms)[0m  [1m[32mINSERT INTO "tickets" ("price", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 9999], ["event_id", 1], ["created_at", "2019-05-23 22:29:50.467159"], ["updated_at", "2019-05-23 22:29:50.467159"]]
+  [1m[35m (499.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tickets/19
+Completed 302 Found in 551ms (ActiveRecord: 539.0ms)
+
+
+Started GET "/tickets/19" for 127.0.0.1 at 2019-05-23 18:29:51 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 18:30:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 54ms (Views: 46.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:30:10 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 62ms (Views: 51.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:35:02 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (3.6ms)
+  Rendered tickets/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 50ms (Views: 42.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:36:30 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.4ms)
+  Rendered tickets/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:36:38 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tickets/13/edit" for 127.0.0.1 at 2019-05-23 18:36:57 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (3.8ms)
+  Rendered tickets/edit.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"tickets", :event_id=>nil}, missing required keys: [:event_id]):
+    1: <%= form_with(model: ticket, url: event_tickets_path(@event), local: true) do |form| %>
+    2:   <% if ticket.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+  
+app/views/tickets/_form.html.erb:1:in `_app_views_tickets__form_html_erb___1060153523388881621_34428780'
+app/views/tickets/edit.html.erb:3:in `_app_views_tickets_edit_html_erb__740507914751357704_35716680'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:44:39 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/1/tickets/new" for 127.0.0.1 at 2019-05-23 18:44:42 -0400
+Processing by TicketsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/new.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.3ms)
+  Rendered tickets/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 47ms (Views: 38.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:44:47 -0400
+Processing by TicketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RcqGXSpgrxog41KuViXEj1js64VnPZmiFN9rUvp+2bH40DW+thcrkAJpiWV9zgvi/++//sQX7gibzU8HvFNtwA==", "ticket"=>{"price"=>"5678"}, "commit"=>"Create Ticket", "event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTicket Create (1.1ms)[0m  [1m[32mINSERT INTO "tickets" ("price", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["price", 5678], ["event_id", 1], ["created_at", "2019-05-23 22:44:47.360547"], ["updated_at", "2019-05-23 22:44:47.360547"]]
+  [1m[35m (200.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tickets/20
+Completed 302 Found in 212ms (ActiveRecord: 202.3ms)
+
+
+Started GET "/tickets/20" for 127.0.0.1 at 2019-05-23 18:44:47 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:44:56 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:46:57 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 48ms (Views: 41.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tickets/3/edit" for 127.0.0.1 at 2019-05-23 18:46:59 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.6ms)
+  Rendered tickets/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 59ms (Views: 49.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/tickets/3" for 127.0.0.1 at 2019-05-23 18:47:05 -0400
+Processing by TicketsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdiaWYqFzkoQybF42EyeFbAP5ppynI0ylaWG8ULN7gDWcXnbAQjOuHkoKApnRPQyR8VCIDHp/i/XYaD8nB/rug==", "ticket"=>{"price"=>"5001"}, "commit"=>"Update Ticket", "id"=>"3"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTicket Update (0.4ms)[0m  [1m[33mUPDATE "tickets" SET "price" = ?, "updated_at" = ? WHERE "tickets"."id" = ?[0m  [["price", 5001], ["updated_at", "2019-05-23 22:47:05.050340"], ["id", 3]]
+  [1m[35m (163.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tickets/3
+Completed 302 Found in 176ms (ActiveRecord: 164.6ms)
+
+
+Started GET "/tickets/3" for 127.0.0.1 at 2019-05-23 18:47:05 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tickets/3/edit" for 127.0.0.1 at 2019-05-23 18:47:08 -0400
+Processing by TicketsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/edit.html.erb within layouts/application
+  Rendered tickets/_form.html.erb (2.8ms)
+  Rendered tickets/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets/3" for 127.0.0.1 at 2019-05-23 18:47:10 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:47:19 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 50ms (Views: 43.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tickets/1" for 127.0.0.1 at 2019-05-23 18:47:53 -0400
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/show.html.erb within layouts/application
+  Rendered tickets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/tickets/19" for 127.0.0.1 at 2019-05-23 18:48:16 -0400
+Processing by TicketsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+HIUEz85KQVoha3y4ZqZ1oLfaCL2yUFBd+C9voqqpEH7NjbgF6ks+0AfwewrnHE1IJ1umZPb7UUE5h/UKgpq8w==", "id"=>"19"}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTicket Destroy (0.5ms)[0m  [1m[31mDELETE FROM "tickets" WHERE "tickets"."id" = ?[0m  [["id", 19]]
+  [1m[35m (162.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 432ms (ActiveRecord: 163.7ms)
+
+
+  
+NameError (undefined local variable or method `tickets_url' for #<TicketsController:0x00007fc025f5b788>
+Did you mean?  ticket_url):
+  
+app/controllers/tickets_controller.rb:63:in `block (2 levels) in destroy'
+app/controllers/tickets_controller.rb:62:in `destroy'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:55:21 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 119ms (Views: 68.9ms | ActiveRecord: 3.5ms)
+
+
+Started DELETE "/tickets/3" for 127.0.0.1 at 2019-05-23 18:55:26 -0400
+Processing by TicketsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4U0JkSA1QzFPnd1ibLvBNNbL916wXlb3aXm2YveUdvfiCStiCKVGz2cHsXymvSnXdInx5dVM+vMafxQIVzS4RQ==", "id"=>"3"}
+  [1m[36mTicket Load (0.5ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  
+app/controllers/tickets_controller.rb:75:in `set_event'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:58:30 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 103ms (Views: 50.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:58:36 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/tickets/20" for 127.0.0.1 at 2019-05-23 18:58:39 -0400
+Processing by TicketsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GfipXvbun1gFa0lSB8cyIqWbxI0xPdKhEHOMeAJ58O0avIut3n6api3xJUzNwdrBB9nCNlQvfqVjdS4Sotk+Xw==", "id"=>"20"}
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  
+app/controllers/tickets_controller.rb:75:in `set_event'
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:58:56 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 101ms (Views: 51.3ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/tickets/20" for 127.0.0.1 at 2019-05-23 18:59:00 -0400
+Processing by TicketsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"04XWggGiM2o4DEwbNq0/f9a/mNrPqpPOygzc7BWKYKrQwfRxKTI2lBCWIAX8q9ecdP2eYaq4P8q5Cn6GtSquGA==", "id"=>"20"}
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Ticket Load (0.0ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTicket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tickets" WHERE "tickets"."id" = ?[0m  [["id", 20]]
+  [1m[35m (154.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/events/1/tickets
+Completed 302 Found in 168ms (ActiveRecord: 155.3ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 18:59:00 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2019-05-23 19:00:24 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 41.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 19:00:31 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/3/tickets" for 127.0.0.1 at 2019-05-23 19:00:34 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 3]]
+  Rendered tickets/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 80ms (Views: 71.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2019-05-23 19:00:40 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 19:00:40 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 74ms (Views: 65.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 19:00:42 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 19:01:06 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-05-23 19:01:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-05-23 19:01:17 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+YRS4J/ByXnbTIfE1aQbOSzPgHcYF41haK48Nnm/wBRc7rcXE4sKaDYUWJegMT3PdY9pMaWdqfVV6+uz0i9C6g==", "session"=>{"email"=>"fjborie@miuandes.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fjborie@miuandes.cl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 257ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-23 19:01:17 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/tickets" for 127.0.0.1 at 2019-05-23 19:01:22 -0400
+Processing by TicketsController#index as HTML
+  Parameters: {"event_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tickets/index.html.erb within layouts/application
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered tickets/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 0.7ms)
+
+

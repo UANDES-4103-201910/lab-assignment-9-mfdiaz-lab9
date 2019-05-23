@@ -3,6 +3,13 @@ class ApplicationController < ActionController::Base
   helper_method :is_user_logged_in?
   helper_method :get_current_user
 
+  rescue_from CanCan::AccessDenied do |exception|
+    respond_to do |format|
+      format.json { head :forbidden }
+      format.html { redirect_to root_path, :alert => exception.message }
+    end
+  end
+
   def index
 
   end

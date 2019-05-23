@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  resources :tickets
+  resources :events do
+    resources :tickets, shallow: true
+  end
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root :to => 'tickets#index'
+  root :to => 'events#index'
 
   get '/login',   to: 'sessions#new', as: :login_form
   post '/login',   to: 'sessions#create', as: :log_in

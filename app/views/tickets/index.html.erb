@@ -13,8 +13,8 @@
     <% @tickets.each do |ticket| %>
       <tr>
         <td><%= ticket.event.name + " $" + ticket.price.to_s %></td>
-        <% if can? :read, ticket %>
-          <td><%= link_to 'Show', ticket %></td>
+        <% if can? :buy, ticket %>
+          <td><%= link_to 'Buy Ticket', ticket %></td>
         <% end %>
         <% if can? :update, ticket %>
           <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
@@ -29,7 +29,6 @@
 
 <br>
 
-<% puts (can? :create, Ticket) %>
 <% if can? :create, Ticket %>
-  <%= link_to 'New Ticket', new_ticket_path %>
+  <%= link_to 'New Ticket', new_event_ticket_path %>
 <% end %>
