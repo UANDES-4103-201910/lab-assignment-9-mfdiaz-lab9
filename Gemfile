@@ -70,3 +70,5 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
 gem 'jquery-rails'
+
+gem 'cancancan'
